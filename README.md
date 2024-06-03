@@ -7,6 +7,9 @@ Yeah, so I made this *thing* while I should've been doing actually important stu
 - **Clock Mode (`c`)**: Shows the current time, updating every second. Yay.
 - **Countdown Mode (`t YYYY/MM/DD HH:MM`)**: Counts down the time to a date you set. Perfect for glaring at while procrastinating on the stuff you should be doing.
 
+## Prerequisites
+You need `figlet` for this to work.
+
 ## How to use this mess
 
 ### Clock Mode

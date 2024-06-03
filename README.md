@@ -4,10 +4,10 @@ Yeah, so I made this *thing* while I should've been doing actually important stu
 
 ## What it does
 
-- **Clock Mode (c): Shows the current time, updating every second. Yay.
-- **Countdown Mode (t YYYY/MM/DD HH:MM): Counts down the time to a date you set. Perfect for glaring at while procrastinating on the stuff you should be doing.
+- **Clock Mode (`c`)**: Shows the current time, updating every second. Yay.
+- **Countdown Mode (`t YYYY/MM/DD HH:MM`)**: Counts down the time to a date you set. Perfect for glaring at while procrastinating on the stuff you should be doing.
 
-## How to use this mess
+## How to use this mess
 
 ### Clock Mode
 ```sh

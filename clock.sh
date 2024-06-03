@@ -1,6 +1,23 @@
-#!/bin/zsh
+#!/bin/sh
 
-# Function to format and display time using figlet
+# Color codes (we can cook something here)
+# RED='\033[0;31m'
+# BOLDRED='\033[1;31m'
+# GREEN='\033[0;32m'
+# BOLDGREEN='\033[1;32m'
+# ORANGE='\033[0;33m'
+# YELLOW='\033[1;33m'
+# BLUE='\033[0;34m'
+# BOLDBLUE='\033[1;34m'
+# PURPLE='\033[0;35m'
+# BOLDPURPLE='\033[1;35m'
+# CYAN='\033[0;36m'
+# BOLDCYAN='\033[1;36m'
+# WHITE='\033[0;37m'
+# BOLDWHITE='\033[1;37m'
+# NC='\033[0m'
+
+# Function to format and display time using figlet with bold green color and basic font
 display_time() {
   local time_string=$1
   local hours_digit1="${time_string:0:1}"
@@ -11,7 +28,8 @@ display_time() {
   local seconds_digit2="${time_string:7:1}"
   
   local formatted_time="$hours_digit1 $hours_digit2 : $minutes_digit1 $minutes_digit2 : $seconds_digit1 $seconds_digit2"
-  figlet -f standard "$formatted_time"
+  echo "$(figlet -f basic "$formatted_time")"
+  #   echo -e "${BOLDGREEN}$(figlet -f basic "$formatted_time")${NC}" - If we want to color it
 }
 
 # Function to calculate the difference between now and the target date
